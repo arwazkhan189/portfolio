@@ -38,9 +38,10 @@ body, html {
   min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image (Contact)*/ 
 .bgimg-3 {
   background-image: url("img/sitebg/2.webp");
+
   min-height: 400px;
 }
 
@@ -49,11 +50,29 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1 {            /*,.bgimg-2,.bgimg-3*/
     background-attachment: scroll;
     min-height: 400px;
   }
 }
+
+#myNavbar
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: azure;
+}
+#myNavbar i
+{
+  padding-right: 5px;
+}
+#myNavbar .w3-bar-item
+{
+ border-radius: 5px ;
+ 
+}
+
+
 </style>
 
 <body>
@@ -61,16 +80,15 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <a class="w3-bar-item w3-button  w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+    <a href="#home" class="w3-bar-item w3-button" ><i class="fa fa-home"></i>HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="https://docs.google.com/document/d/1KfJmkqOtr56cak35bCN9lAmKNbo2Dqc5aiGT2jXbUOQ/edit?usp=sharing" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file-text"></i> RESUME</a>
-    <a href="https://wdforbeginner.blogspot.com/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-external-link-square"></i> MY BLOG</a>
-
+    <a href="https://docs.google.com/document/d/1KfJmkqOtr56cak35bCN9lAmKNbo2Dqc5aiGT2jXbUOQ/edit?usp=sharing" target='_blank' class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file-text"></i> RESUME</a>
+    <a href="https://wdforbeginner.blogspot.com/" target='_blank' class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-external-link-square"></i> MY BLOG</a>
    </div>
 
   <!-- Navbar on small screens -->
@@ -78,8 +96,8 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="https://docs.google.com/document/d/1KfJmkqOtr56cak35bCN9lAmKNbo2Dqc5aiGT2jXbUOQ/edit?usp=sharing" class="w3-bar-item w3-button" >RESUME</a>
-    <a href="https://wdforbeginner.blogspot.com/" class="w3-bar-item w3-button" >MY BLOG</a>
+    <a href="https://docs.google.com/document/d/1KfJmkqOtr56cak35bCN9lAmKNbo2Dqc5aiGT2jXbUOQ/edit?usp=sharing" target='_blank' class="w3-bar-item w3-button" >RESUME</a>
+    <a href="https://wdforbeginner.blogspot.com/" target='_blank' class="w3-bar-item w3-button" >MY BLOG</a>
     
   </div>
 </div>
@@ -87,10 +105,11 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;padding-top: 20vh;padding-right: 18vw;">
-    <h2 style="color:peru;" class="jumbotron-heading" ><span id="typed"></span></h2>
+    <h2 style="color:black;font-size: larger;background-color: gainsboro; " class="jumbotron-heading" ><span id="typed"></span></h2>
   </div>
   
 </div>
+
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
@@ -99,7 +118,7 @@ body, html {
   
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="img/sitebg/pic.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" style="opacity: 1;border-radius: 50%;border:1px solid palegoldenrod; " alt="Photo of Me" width="300" height="133" ><!---200each width and height-->
+      <img src="img/sitebg/pic.jpg" class="w3-round w3-image " style="border-radius: 50%;border:1px solid palegoldenrod; " alt="Photo of Me" width="300" height="133" ><!---200each width and height-->
       
     </div>
 
@@ -118,14 +137,14 @@ body, html {
   <!--my skills section-->
   <p class="w3-large w3-center w3-padding-16" style="text-decoration:underline;">My Skills</p>
   <div class="w3-row" >
-    <div class="w3-col m2 w3-center"><img src="img/pimg/pylogo.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Python logo" style="opacity:1;" width= "100"  height= "100"></div>
-    <div class="w3-col m2 w3-center"><img src="img/pimg/clogo.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="C logo" style="opacity:1;" width= "100" height= "100"></div>
-    <div class="w3-col m2 w3-center"><img src="img/pimg/htmllogo.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="html logo" style="opacity:1;" width= "100" height= "100"></div>
-    <div class="w3-col m2 w3-center"><img src="img/pimg/csslogo.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="css logo" style="opacity:1;" width= "100"  height= "100"></div>
-    <div class="w3-col m2 w3-center"><img src="img/pimg/jslogo.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="javascript logo" style="opacity:1;" width= "100"  height= "100"></div>
-    <div class="w3-col m2 w3-center"><img src="img/pimg/phplogo.svg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="php logo" style="opacity:1;" width= "100"  height= "100"></div>
+    <div class="w3-col m2 w3-center"><img src="img/pimg/pylogo.png" class="w3-round w3-image " alt="Python logo"  width= "100"  height= "100"></div>
+    <div class="w3-col m2 w3-center"><img src="img/pimg/clogo.jpg" class="w3-round w3-image "  alt="C logo"  width= "100" height= "100"></div>
+    <div class="w3-col m2 w3-center"><img src="img/pimg/htmllogo.jpg" class="w3-round w3-image " alt="html logo"  width= "100" height= "100"></div>
+    <div class="w3-col m2 w3-center"><img src="img/pimg/csslogo.png" class="w3-round w3-image " alt="css logo"  width= "100"  height= "100"></div>
+    <div class="w3-col m2 w3-center"><img src="img/pimg/jslogo.jpg" class="w3-round w3-image " alt="javascript logo"  width= "100"  height= "100"></div>
+    <div class="w3-col m2 w3-center"><img src="img/pimg/phplogo.svg" class="w3-round w3-image " alt="php logo"  width= "100"  height= "100"></div>
     <div class="w3-row" >
-    <div class="w3-col m2 w3-center"><img src="img/pimg/mysqlimg.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="mysql logo" style="opacity:1;" width= "100"  height= "100"></div>
+    <div class="w3-col m2 w3-center"><img src="img/pimg/mysqlimg.jpeg" class="w3-round w3-image " alt="mysql logo"  width= "100"  height= "100"></div>
     </div>
   </div>
   <div>
@@ -181,21 +200,22 @@ body, html {
     </div>
 
     <div class="w3-col m3">
-      <img src="img/cimg/7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Practical Introduction to the Command Line(Bash) ">
+      <img src="img/cimg/7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Python (basic) HackerRank skill certificate hackerrank">
     </div>
 
     <div class="w3-col m3">
-      <img src="img/cimg/8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Build Your Portfolio with HTML and CSS">
+      <img src="img/cimg/8.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Problem Solving (Basic) HackerRank skill Certificate">
     </div>    
   </div>
 </div>
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<div id="modal01" class="w3-modal " onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <p id="caption" class="w3-xlarge" style="opacity: 1; background-color:gainsboro; "></p>
     <img id="img01" class="w3-image" style="max-width: 70%;" alt=""><!--no need of src becoz js apply here -->
-    <p id="caption" class="w3-opacity w3-large"></p>
+    
   </div>
 </div>
 
@@ -212,26 +232,38 @@ body, html {
   <h3 class="w3-center" style="text-decoration:underline;">My Projects</h3>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px;">
-        <div class="w3-third w3-margin-bottom" style="border: 1px solid grey;border-radius: 15px 15px 5px 5px;">
-          <img src="img/psimg/ccqlogo.jpg" alt="Captain Cricket Quiz" style="width:40%;border: 1px solid palegoldenrod;" class="w3-hover-opacity" onclick="Click('img/psimg/CCQPS.jpg','Captain Cricket Quiz App ScreenShot')" ><!--pass the screenshot source-->
-          <div class="w3-container w3-white">
+        <div class="w3-third w3-margin-right w3-margin-bottom w3-center " style="border: 1px solid grey;border-radius: 15px 15px 5px 5px;background-color: grey; ">
+          <img src="img/psimg/ccqlogo.jpg" alt="Captain Cricket Quiz" style="width:50%;border: 1px solid palegoldenrod; margin-top: 10px; border-radius: 5px;" class=" w3-hover-opacity " onclick="Click('img/psimg/CCQPS.jpg','Captain Cricket Quiz App ScreenShots')" ><!--pass the screenshot source-->
+          <div class="w3-container w3-white"style="margin-top:10px ; margin-bottom: 10px; border-radius:5px">
             <p><b>Captain Cricket Quiz</b></p>
             <p class="w3-opacity"><i class="fa fa-microphone" aria-hidden="true"></i>Ask Your Assistant<br><b style="text-decoration: underline;">Talk to Captain Cricket Quiz</b></p>
             <p>Captain Cricket Quiz is a Google assistant action created by using Google Sheets and Google Action Console .</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="location.href='https://assistant.google.com/services/a/uid/000000020702cca7?hl=en&source=web'">Go To</button>
+            <a class="w3-button w3-black w3-margin-bottom" target="_blank" href='https://assistant.google.com/services/a/uid/000000020702cca7?hl=en&source=web'>Go To</a>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-right w3-margin-bottom w3-center " style="border: 1px solid grey;border-radius: 15px 15px 5px 5px;background-color: grey; ">
+          <img src="img/psimg/ibwlogo.jpg" alt="Insta-BW" style="width:50%;height:140px;border: 1px solid palegoldenrod; margin-top: 10px; border-radius: 5px;" class=" w3-hover-opacity " onclick="Click('img/psimg/IBWPS.jpg','Insta-BW Program ScreenShots')" ><!--pass the screenshot source-->
+          <div class="w3-container w3-white"style="margin-top:10px ; margin-bottom: 10px; border-radius:5px">
+            <p><b>Insta-BW</b></p>
+            <p class="w3-opacity"><b style="text-decoration: underline;">Instagram Birthday Wisher</b></p>
+            <p>Insta-BW (Instagram Birthday Wisher) is a python program which automatically post(wish) your friend's birthday on instagram story. </p>
+            <a class="w3-button w3-black w3-margin-bottom" target="_blank" href='https://github.com/arwazkhan189/Insta-BW'>Go To</a>
           </div>
         </div>
       
-    </div>
+      </div>
+      
+    
   </div>
 
 
 <!-- Modal for showing project screenshots  on click-->
-<div id="m01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<div id="m01" class="w3-modal" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <p id="capsn" class=" w3-xlarge" style="opacity:1; background-color:gainsboro; "></p>
     <img id="i01" class="w3-image" alt=""> <!--no need of src becoz js apply here -->
-    <p id="capsn" class="w3-opacity w3-large"></p>
+    
   </div>
 </div>
 <script>
@@ -250,10 +282,9 @@ body, html {
 <!-- Third Parallax Image with PROJECTS Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACTS</span>
   </div>
 </div>
-<hr >
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center" style="text-decoration:underline;">Contacts</h3>
@@ -274,14 +305,14 @@ body, html {
 
 <!-- Footer -->
 
-<footer class="w3-center w3-black w3-padding-50 w3-opacity w3-hover-opacity-off" style="opacity: 1;">
+<footer class="w3-center w3-black w3-padding-50 " >
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href='https://www.facebook.com/arwazkhan189' style="padding-right: 10px;"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href='https://www.twitter.com/arwazkhan189' style="padding-right: 10px;"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href='https://www.linkedin.com/in/arwaz-khan-bb52a1134/' style="padding-right: 10px;"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href='https://www.instagram.com/iamarwaz' style="padding-right: 10px;"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href='https://github.com/arwazkhan189'><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a target='_blank'href='https://www.facebook.com/arwazkhan189' style="padding-right: 10px;"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a target='_blank'href='https://www.twitter.com/arwazkhan189' style="padding-right: 10px;"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a target='_blank'href='https://www.linkedin.com/in/arwaz-khan-bb52a1134/' style="padding-right: 10px;"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a target='_blank'href='https://www.instagram.com/iamarwaz' style="padding-right: 10px;"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a target='_blank'href='https://github.com/arwazkhan189'><i class="fa fa-github w3-hover-opacity"></i></a>
   </div>
   <p><i class="fa fa-copyright" aria-hidden="true">Arwaz Khan</i></p>
 <p style="opacity: 0.5">“ I am still learning. ”
@@ -325,11 +356,11 @@ window.onload = function () {
         console.log("loaded")
         var typed = new Typed('#typed', {
             strings: ["Hey Folks!!!","I 'm Arwaz Khan","Welcome to my website 😎"],
-            backSpeed: 15,
+            backSpeed: 50,
             smartBackspace: true,
             backDelay: 1200,
             startDelay: 1000,
-            typeSpeed: 25,
+            typeSpeed: 50,
             loop: true,
         });
     };
