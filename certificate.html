@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--w3css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Arwaz Khan | Certificates</title>
+    <link rel="icon" href="img/sitebg/icon.png" type="image/icon">
+  
+  <style> 
+  body{ background-color: bisque;
+        color: #ffffff;}
+        /*scroll bar effect*/
+      ::-webkit-scrollbar {
+      width: 12px;
+      background: grey; 
+      border-radius: 10px;
+      border: 1px solid black;}
+      
+      ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: black; }
+  </style>  
+  <script>
+
+  </script>
+  </head>
+  <body>
+      <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container">
+            
+          <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a class="navbar-brand" href="#" onclick="window.close();"><i class="fas fa-times"></i> Close</a>
+        </div>
+      </nav>
+      
+
+      <!--certificate headings-->
+      <h1 class="w3-center py-4  ">Certificates</h1>
+      <!--certificates-->
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 py-2">
+            <img src="img/cimg/new/1.jpg" onclick="onClick(this)" style="width: 100%;" alt="Advanced Styling with Responsive Design" >
+          </div>
+          <div class="col-md-3 py-2">
+            <img src="img/cimg/new/2.jpg" onclick="onClick(this)" style="width: 100%;" alt="Built your Portfolio Website using HTML and CSS">
+          </div>
+          <div class="col-md-3 py-2">
+            <img src="img/cimg/new/3.jpg" onclick="onClick(this)" style="width: 100%;" alt="Practical Introduction to Command Line(Bash)">  
+          </div>
+          <div class="col-md-3 py-2">
+            <img src="img/cimg/new/4.jpg" onclick="onClick(this)" style="width: 100%;" alt="The Beginners Guide to Cyber Security 2020">
+          </div>          
+        </div>
+        <div class="row py-4">
+          <div class="col-md-3 py-2">
+            <img src="img/cimg/new/5.jpg" onclick="onClick(this)" style="width: 100%;" alt="Complete Metasploit Course: Beginner to Advance">
+          </div>
+          <div class="col-md-3 py-2">
+            <img src="img/cimg/new/6.jpg" onclick="onClick(this)" style="width: 100%;" alt="Never Get Hacked Again Protection Against Spam">
+          </div>
+          <div class="col-md-3 py-2">
+            <img src="img/cimg/new/7.jpg" onclick="onClick(this)" style="width: 100%;" alt="HTML Fundamentals Course (Sololearn)">  
+          </div>
+          <div class="col-md-3 py-2">
+            <img src="img/cimg/new/8.jpg" onclick="onClick(this)" style="width: 100%;" alt="CSS Fundamentals Course (Sololearn)" >
+          </div>          
+        </div>
+      </div>
+
+
+
+
+
+
+        <!-- Footer -->
+
+<footer class="w3-center w3-black pt-2 pb-1" >
+  <div class="d-flex justify-content-center "><a href="#" class="btn btn-light "><i class="fa fa-arrow-up "></i> To the top</a></div>
+  
+  <div class="d-flex justify-content-center pt-2">
+    <a target='_blank' href='https://www.facebook.com/arwazkhan189' style="padding-right: 10px;"><i class="fab fa-facebook-f fa-fw blue-text"></i></a>
+    <a target='_blank' href='https://www.twitter.com/arwazkhan189' style="padding-right: 10px;"><i class="fab fa-twitter fa-fw blue-text"></i></a>
+    <a target='_blank' href='https://www.linkedin.com/in/arwaz-khan-bb52a1134/' style="padding-right: 10px;"><i class="fab fa-linkedin fa-fw blue-text"></i></a>
+    <a target='_blank' href='https://www.instagram.com/iamarwaz' style="padding-right: 10px;"><i class="fab fa-instagram fa-fw pink-text"></i></a>
+    <a target='_blank' href='https://github.com/arwazkhan189'><i class="fab fa-github"></i></a>
+  </div>
+  <p class="d-flex justify-content-center pt-2"><i class="far fa-copyright" aria-hidden="true" >Arwaz Khan</i></p>
+  <p class="d-flex justify-content-center " style="opacity: 0.5">“ I am still learning. ”- Michelangelo</p>
+</footer>
+
+
+    <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal " onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fas fa-times"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <p id="caption" class="w3-xlarge" style="opacity: 1; background-color:gainsboro; "></p>
+          <img id="img01" class="w3-image w3-xlarge" style="max-width: 100%;" alt=""><!--no need of src becoz js apply here -->
+
+        </div>
+      </div>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+    </script>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+  </body>
+
+</html>
