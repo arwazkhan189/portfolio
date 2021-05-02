@@ -1,4 +1,4 @@
 # Portfolio
-**My new portfolio website!!!**
+**This is my first portfolio website**
 
-**[Click here to see 🔗](https://arwazkhan.me/)**
+**[please visit my new portfolio website 🔗](https://arwazkhan.me/)**
